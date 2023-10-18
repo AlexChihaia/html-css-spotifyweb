@@ -5,6 +5,23 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* VARIABLES */
+
+:root {
+    --nav-color: #a3a3a3;
+}
 
 
 /* TYPOGRAPHY */
@@ -19,6 +36,14 @@
 
 /* UTILITIES */
 
+.flex {
+    display: flex;
+}
+
+.only-mobile {
+    display: none;
+}
+
 
 
 
@@ -28,6 +53,12 @@
 
 
 /* COMMON */
+
+.nav-menu p,
+.nav-menu span,
+.nav-menu a {
+    color: var(--nav-color);
+}
 
 
 
@@ -42,20 +73,71 @@
 
 /* SECTION NAV-MENU */
 
+.nav-menu {
+    width: 230px;
+    height: calc(100vh - 90px);
+    background-color: black;
+}
 
 
 
+.nav-menu .side-nav {
+    width: 100%;
+    padding: 0 20px;
+}
 
 
+.nav-menu .side-nav .top-nav>img {
+    width: 70%;
+    padding: 20px 0;
+}
 
 
+.nav-menu .side-nav .top-nav .search img {
+    width: 10%;
+}
+
+.nav-menu .side-nav .top-nav .search {
+    flex-direction: column;
+}
 
 
+.nav-menu .side-nav .top-nav span {
+    color: white;
+}
+
+.nav-menu .side-nav .top-nav .row-small {
+    padding: 5px 0;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.nav-menu .side-nav .top-nav .playlist-header i {
+    background-color: grey;
+    padding: 3.5px 10px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.top-nav a {
+    gap: 5px;
+}
 
 
+.playlist-body {
+    min-height: 260px;
+    overflow: auto;
+    border: 1px solid white;
 
+}
 
-
+.playlist-body a {
+    display: block;
+    padding-top: 15px;
+    font-size: 1rem;
+    color: var(--nav-color);
+}
 
 /* SECTION MAIN-MENU */
 
@@ -87,3 +169,62 @@
 
 
 /* FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+
+@media screen and (max-width: 576px) {
+    .only-desktop {
+        display: none;
+    }
+
+    .only-mobile {
+        display: block;
+    }
+
+    .nav-menu {
+        width: 50px;
+    }
+
+    .nav-menu .side-nav {
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    .nav-menu .side-nav .top-nav img {
+        width: 100%;
+    }
+
+
+    .nav-menu .side-nav .top-nav .search img {
+        width: 100%;
+    }
+
+
+}
