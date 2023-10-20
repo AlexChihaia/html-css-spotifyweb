@@ -76,6 +76,10 @@ body {
 
 /* SECTION NAV-MENU */
 
+.container-xxl {
+    position: relative;
+}
+
 .nav-menu {
     width: 230px;
     height: calc(100vh - 90px);
@@ -193,20 +197,20 @@ body {
 
 
 
-.main-menu {
+.container-main-menu {
     height: calc(100vh - 90px);
     background-color: #141922;
     flex-grow: 1;
 }
 
 
-.main-menu {
+.container-main-menu {
     position: relative;
 }
 
 
-.main-menu .subscribe {
-    background-color: rgba(8, 11, 18, 0.5);
+.container-main-menu .subscribe {
+    background-color: rgba(8, 11, 18, 0.3);
     height: 90px;
     position: absolute;
     width: 100%;
@@ -219,19 +223,102 @@ body {
 
 
 
-.main-menu .subscribe .upgrade {
+.container-main-menu .subscribe .upgrade {
     margin-left: auto;
     margin-right: 5px;
     height: 40px;
     width: 220px;
     border-radius: 30px;
     border: 2px solid rgb(255, 255, 255, 1);
-    background-color: rgb(8, 11, 18, 0.5);
+    background-color: rgb(8, 11, 18, 0.3);
     color: rgb(255, 255, 255, 2);
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 700;
 }
+
+
+.container-main-menu .main-menu {
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.container-main-menu .main-menu .contents {
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    padding-top: 20px;
+
+}
+
+.container-main-menu .main-menu ul li a {
+    color: var(--nav-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+
+.box-row {
+    width: 100%;
+    gap: 15px;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+
+.main-menu .row .box-container {
+    width: calc(100% / 6);
+
+}
+
+
+
+
+.row {
+    flex-direction: column;
+}
+
+.main-menu .row .box-container .box {
+    width: 100%;
+    padding: 10px 0;
+
+}
+
+.main-menu .row .box-container .box img {
+    width: 100%;
+}
+
+.main-menu .row h2 {
+    padding-top: 45px;
+    color: white;
+    padding-left: 20px;
+}
+
+.main-menu .row h4 {
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.main-menu .row .subtitle {
+    padding: 10px 0;
+    height: 10px;
+    font-size: .75rem;
+    color: var(--nav-color);
+    text-align: center;
+}
+
+
+
+
+
 
 
 
