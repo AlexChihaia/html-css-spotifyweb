@@ -115,11 +115,16 @@ body {
 
 }
 
+.nav-menu .playlist-header a {
+    color: black;
+}
+
 .nav-menu .playlist-header i {
     background-color: grey;
     padding: 3.5px 10px;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 900;
+    border-radius: 5px;
 }
 
 
@@ -190,13 +195,42 @@ body {
 
 .main-menu {
     height: calc(100vh - 90px);
-    background-color: burlywood;
+    background-color: #141922;
     flex-grow: 1;
 }
 
 
+.main-menu {
+    position: relative;
+}
+
+
 .main-menu .subscribe {
-    background-color: aqua;
+    background-color: rgba(8, 11, 18, 0.5);
+    height: 90px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+.main-menu .subscribe .upgrade {
+    margin-left: auto;
+    margin-right: 5px;
+    height: 40px;
+    width: 220px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255, 1);
+    background-color: rgb(8, 11, 18, 0.5);
+    color: rgb(255, 255, 255, 2);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 
@@ -245,6 +279,8 @@ footer {
 }
 
 
+
+/* MID MENU */
 .mid-menu {
     flex-grow: 1;
     flex-direction: column;
@@ -310,6 +346,8 @@ footer {
 }
 
 
+
+/* LEFT MENU */
 .menu-bottom .left-menu {
     padding-left: 10px;
     align-items: center;
@@ -347,6 +385,9 @@ footer {
     color: var(--nav-color);
     font-size: .8125rem;
 }
+
+
+/* RIGHT MENU */
 
 .right-menu {
     width: 300px;
