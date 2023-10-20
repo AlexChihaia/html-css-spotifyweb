@@ -279,58 +279,47 @@ footer {
     font-size: 12px;
 }
 
-.time-bar {
-    width: 60%;
+.mid-menu .time-bar {
+    width: 100%;
     align-items: center;
     padding-top: 5px;
+    min-width: 160px;
 }
 
-.bar {
+.mid-menu .bar {
     width: 100%;
-
 }
 
-.bar a {
+.mid-menu .bar a {
     color: #a3a3a3;
 }
 
 
-.bar.bright {
-    width: 70%;
-}
-
-.bar.dark hr {
-    height: 4px;
+.mid-menu .bar.dark hr {
+    height: 5px;
     background-color: #a3a3a3;
     border-radius: 200px;
+    opacity: 0.5;
 }
 
-.bar.bright {
+.mid-menu .bar.bright {
     width: 20%;
     height: 5px;
     background-color: white;
     border-radius: 200px;
 }
 
-.bar a #bright {
-    height: 5px;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-
-}
-
-
 
 .menu-bottom .left-menu {
-    padding: 0 10px;
+    padding-left: 10px;
     align-items: center;
+    width: 30%;
 }
 
 
 .left-menu .nome-brano {
     padding-left: 10px;
-    padding-right: 40px;
+    width: 80px;
 }
 
 .left-menu .nome-brano h4 {
@@ -354,33 +343,49 @@ footer {
 }
 
 .left-menu .icons a {
-    padding: 0 5px;
+    padding-left: 10px;
     color: var(--nav-color);
     font-size: .8125rem;
 }
 
+.right-menu {
+    width: 300px;
+}
+
+.right-menu .time-bar {
+    align-items: center;
+    padding-right: 10px;
+    justify-content: flex-end;
+}
+
+.right-menu a {
+    color: #a3a3a3;
+}
 
 
 
+.right-menu .time-bar .bar.bright {
+    width: 25px;
+    height: 5px;
+    background-color: white;
+
+}
 
 
+.right-menu .time-bar .bar.dark {
+    width: 95px;
+    height: 5px;
+    background-color: var(--nav-color);
+    opacity: 0.5;
+}
 
+.right-menu .time-bar>a {
+    width: 10%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.right-menu .time-bar span {
+    margin: 0;
+}
 
 
 
@@ -407,7 +412,11 @@ footer {
 /* 992px */
 
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .time-bar span {
+        margin: 0 15px;
+    }
+}
 
 
 
@@ -419,7 +428,12 @@ footer {
 /* 768px */
 
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+
+    .time-bar span {
+        margin: 0 10px;
+    }
+}
 
 
 
@@ -462,5 +476,18 @@ footer {
         width: 100%;
     }
 
+
+    .mid-menu .time-bar {
+        width: 100%;
+    }
+
+    .time-bar span {
+        margin: 0 5px;
+    }
+
+
+    .icons {
+        flex-wrap: wrap;
+    }
 
 }
