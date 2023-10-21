@@ -245,6 +245,7 @@ body {
     top: 90px;
     bottom: 0;
     width: 100%;
+    padding-bottom: 90px;
 }
 
 
@@ -267,7 +268,6 @@ body {
 .box-row {
     width: 100%;
     gap: 15px;
-    justify-content: space-around;
     padding: 0 20px;
 }
 
@@ -294,6 +294,10 @@ body {
     width: 100%;
 }
 
+.main-menu .row .box-container .box .round img {
+    border-radius: 50%;
+}
+
 .main-menu .row h2 {
     padding-top: 45px;
     color: white;
@@ -307,7 +311,7 @@ body {
     font-size: 1rem;
 }
 
-.main-menu .row .subtitle {
+.main-menu .row .box-row .info .subtitle {
     padding: 10px 0;
     height: 10px;
     font-size: .75rem;
@@ -316,31 +320,13 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.main-menu .row .subtitle {
+    padding-left: 20px;
+    color: var(--nav-color);
+    font-size: 0.75rem;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
 
 
 
@@ -544,6 +530,15 @@ footer {
     .time-bar span {
         margin: 0 15px;
     }
+
+
+    .main-menu .row .box-row {
+        flex-wrap: wrap;
+    }
+
+    .main-menu .row .box-container {
+        width: calc(100% / 4 - 15px);
+    }
 }
 
 
@@ -560,6 +555,14 @@ footer {
 
     .time-bar span {
         margin: 0 10px;
+    }
+
+    .main-menu .row .box-row {
+        flex-wrap: wrap;
+    }
+
+    .main-menu .row .box-container {
+        width: calc(100% / 2 - 10px);
     }
 }
 
@@ -613,9 +616,12 @@ footer {
         margin: 0 5px;
     }
 
-
-    .icons {
+    .main-menu .row .box-row {
         flex-wrap: wrap;
+    }
+
+    .main-menu .row .box-container {
+        width: calc(100% / 2 - 10px);
     }
 
 }
