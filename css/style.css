@@ -360,6 +360,10 @@ body {
     padding-left: 20px;
 }
 
+.padding {
+    padding-bottom: 20px;
+}
+
 .main-menu .row h4 {
     color: white;
     padding-top: 10px;
@@ -680,4 +684,8 @@ footer {
         width: calc(100% / 2 - 10px);
     }
 
+
+    .menu-bottom .left-menu .icons {
+        flex-wrap: wrap;
+    }
 }
