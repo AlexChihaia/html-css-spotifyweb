@@ -46,6 +46,29 @@ body {
     display: none;
 }
 
+.hover-play {
+    display: none;
+    font-size: 6rem;
+    padding: 30%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    background-color: #282828;
+    opacity: 0.5;
+}
+
+
+.img:hover .hover-play {
+    display: block;
+}
+
+.img {
+    position: relative;
+}
 
 
 
@@ -76,6 +99,14 @@ body {
     transition: 0.1s linear;
 }
 
+
+.green-underline-bottom {
+    border-bottom: 2px solid #adff2f;
+}
+
+.green-underline-left {
+    border-left: 2px solid #adff2f;
+}
 
 
 
@@ -278,7 +309,12 @@ body {
     color: var(--nav-color);
     text-transform: uppercase;
     font-size: 14px;
-    padding: 0 20px;
+    padding: 0 10px;
+}
+
+
+.container-main-menu .main-menu ul li {
+    padding-bottom: 40px;
 }
 
 
@@ -304,7 +340,10 @@ body {
 .main-menu .row .box-container .box {
     width: 100%;
     padding: 10px 0;
+}
 
+.main-menu .row .box-container .box .img {
+    cursor: pointer;
 }
 
 .main-menu .row .box-container .box img {
@@ -316,7 +355,7 @@ body {
 }
 
 .main-menu .row h2 {
-    padding-top: 45px;
+    padding-top: 5px;
     color: white;
     padding-left: 20px;
 }
