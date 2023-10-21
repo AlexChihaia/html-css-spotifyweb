@@ -70,6 +70,12 @@ body {
 
 }
 
+.container-main-menu .subscribe .upgrade:hover {
+    width: 260px;
+    height: 50px;
+    transition: 0.1s linear;
+}
+
 
 
 
