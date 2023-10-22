@@ -310,14 +310,16 @@
                 </div>
                 <div class="nome-brano">
                     <h4>Sinister</h4>
-                    <p>Brano Nome</p>
+                    <a href="#">
+                        <p class="glow-underline">Brano Nome</p>
+                    </a>
                 </div>
                 <div class="icons flex">
                     <a href="#"><span>
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-heart glow-bottom"></i>
                         </span></a>
                     <a href="#"><span>
-                            <i class="fa-regular fa-folder"></i>
+                            <i class="fa-regular fa-folder glow-bottom"></i>
                         </span></a>
                 </div>
             </div>
@@ -328,16 +330,19 @@
                 <ul class="play flex">
                     <li><a href=""><i class="fa-solid fa-shuffle small"></i></a></li>
                     <li> <a href=""><i class="fa-solid fa-backward-step small"></i></a></li>
-                    <li><a href="#"><i class="fa-regular fa-circle-play big"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-circle-play big glow-mid-bottom"></i></a></li>
                     <li><a href=""><i class="fa-solid fa-forward-step small"></i></a></li>
                     <li><a href=""><i class="fa-solid fa-rotate-right small"></i></a></li>
                 </ul>
                 <div class="time-bar flex">
                     <span>0:25</span>
                     <div class="bar bright">
-                        <a href="">
+                        <a href="" class="point-select">
                             <hr>
                         </a>
+                    </div>
+                    <div class="dot">
+                        <i class="fa-solid fa-circle only-hover"></i>
                     </div>
                     <div class="bar dark">
                         <a href="">
@@ -350,22 +355,18 @@
             <!-- /MID MENU -->
 
             <!-- RIGHT MENU -->
-            <div class="right-menu">
+            <div class="right-menu flex">
+
                 <div class="time-bar flex">
-                    <a href="#">
-                        <span><i class="fa-solid fa-list"></i></span>
-                    </a>
-                    <a href="#">
-                        <span><i class="fa-solid fa-desktop"></i></span>
-                    </a>
-                    <a href="#">
-                        <span><i class="fa-solid fa-volume-high"></i></span>
-                    </a>
 
                     <div class="bar bright">
                         <a href="">
                             <hr>
                         </a>
+                    </div>
+
+                    <div class="dot">
+                        <i class="fa-solid fa-circle only-hover"></i>
                     </div>
 
                     <div class="bar dark">
@@ -375,6 +376,18 @@
                     </div>
 
                 </div>
+                <a href="#">
+                    <span><i class="fa-solid fa-volume-high"></i></span>
+                </a>
+
+                <a href="#">
+                    <span><i class="fa-solid fa-desktop"></i></span>
+                </a>
+
+                <a href="#">
+                    <span><i class="fa-solid fa-list"></i></span>
+                </a>
+
             </div>
             <!-- /RIGHT MENU -->
         </div>
