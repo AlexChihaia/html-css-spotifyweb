@@ -102,6 +102,10 @@ body {
 
 .green-underline-bottom {
     border-bottom: 2px solid #adff2f;
+    margin-left: 20px;
+    margin-right: 10px;
+
+
 }
 
 .green-underline-left {
