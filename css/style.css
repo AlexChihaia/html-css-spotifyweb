@@ -438,6 +438,7 @@ footer {
     height: 90px;
     align-items: center;
     bottom: 0;
+    justify-content: space-between;
 }
 
 .menu-bottom ul {
@@ -454,6 +455,8 @@ footer {
     padding-bottom: 25px;
     padding-top: 10px;
     height: 100%;
+    max-width: 600px;
+
 }
 
 .play {
@@ -520,10 +523,12 @@ footer {
 
 
 /* LEFT MENU */
+
+
 .menu-bottom .left-menu {
     padding-left: 10px;
     align-items: center;
-    width: 30%;
+    width: 230px;
 }
 
 
